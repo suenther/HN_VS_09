@@ -52,9 +52,9 @@
       } else if (response.status === 422) {
         const data = await response.json();
         const firstError = data.detail?.[0]?.msg || "Ungültige Eingabe.";
-        alert("❌ Fehler: " + firstError);
+        alert("Fehler: " + firstError);
       } else {
-        alert("❌ Fehler beim Speichern.");
+        alert("Fehler beim Speichern.");
       }
     });
   </script>
